@@ -1,0 +1,94 @@
+.footer {
+    padding-top: 79px;
+    padding-bottom: 20px;
+    border-top: 1px solid $grey;
+    .logo {
+        width: 179px;
+        height: 48px;
+        margin-right: 0px;
+        margin-top: 8px;
+    }
+}
+.box-footer {
+    display: flex;
+    justify-content: space-between;
+    &-item {
+        display: flex;
+        justify-content: space-between;
+        flex: 0 0 66.4%;
+    }
+    &-list {
+        font-size: 1.12rem;
+        list-style-type: none;
+        &__item {
+            margin-bottom: 1.62rem;
+        }
+        &__link {
+            text-decoration: none;
+            color: $grey;
+        }
+        &__tel {
+            font-size: 1.68rem;
+            margin-bottom: 2.06rem;
+        }
+    }
+    &-info {
+        flex: 0 0 32%;
+    }
+    &-tel {
+        text-align: right;
+        margin-left: 30px;
+    }
+}
+.box-footer-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    &__vk {
+        background-image: url(../../../img/svg/vk.svg);
+        background-size: 23px 16px;
+    }
+    &__insta {
+        background-image: url(../../../img/svg/instagram.svg);
+        background-size: 18px 18px;
+    }
+    &__fb {
+        background-image: url(../../../img/svg/facebook.svg);
+        background-size: 9px 18px;
+    }
+    &__link {
+        display: block;
+        width: 48px;
+        height: 48px;
+        border: 2px solid $grey;
+        border-radius: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-left: 26px;
+        opacity: 0.8;
+        transition: 0.2s ease;
+    }
+}
+.box-copyright {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 43px;
+    &__copy {
+        opacity: 0.6;
+    }
+    &__text {
+        color: #a6a8a4;
+        position: relative;
+    }
+    &__link {
+        text-decoration: none;
+        color: $grey;
+        opacity: 0.6;
+        transition: 0.2s ease;
+        &:hover {
+            color: $grey;
+            opacity: 1;            ;
+        }
+    }
+}
