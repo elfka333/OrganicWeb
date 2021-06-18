@@ -5,7 +5,7 @@
     .logo {
         width: 179px;
         height: 48px;
-        margin-right: 0px;
+        margin-right: 0;
         margin-top: 8px;
     }
 }
@@ -14,8 +14,8 @@
     justify-content: space-between;
     &-item {
         display: flex;
-        justify-content: space-between;
         flex: 0 0 66.4%;
+        justify-content: space-between;
     }
     &-list {
         font-size: 1.12rem;
@@ -42,9 +42,10 @@
 }
 .box-footer-social {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: flex-end;
     list-style-type: none;
+    gap: 1.69rem;
     &__vk {
         background-image: url(../../../img/svg/vk.svg);
         background-size: 23px 16px;
@@ -62,12 +63,11 @@
         width: 48px;
         height: 48px;
         border: 2px solid $grey;
+        transition: 0.2s ease;
         border-radius: 100%;
         background-repeat: no-repeat;
         background-position: center center;
-        margin-left: 26px;
         opacity: 0.8;
-        transition: 0.2s ease;
     }
 }
 .box-copyright {
@@ -88,7 +88,7 @@
         transition: 0.2s ease;
         &:hover {
             color: $grey;
-            opacity: 1;            ;
+            opacity: 1;
         }
     }
 }
