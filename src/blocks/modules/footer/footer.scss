@@ -32,31 +32,28 @@
             margin-bottom: 2.06rem;
         }
     }
-    &-info {
-        flex: 0 0 32%;
-    }
     &-tel {
         text-align: right;
-        margin-left: 30px;
+        margin-left: 9px;
     }
 }
 .box-footer-social {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     list-style-type: none;
-    gap: 1.69rem;
+    margin-right: 5px;
     &__vk {
         background-image: url(../../../img/svg/vk.svg);
-        background-size: 23px 16px;
+        background-size: 23px;
     }
     &__insta {
         background-image: url(../../../img/svg/instagram.svg);
-        background-size: 18px 18px;
+        background-size: 18px;
     }
     &__fb {
         background-image: url(../../../img/svg/facebook.svg);
-        background-size: 9px 18px;
+        background-size: 18px;
     }
     &__link {
         display: block;

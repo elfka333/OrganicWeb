@@ -50,6 +50,9 @@ h2 {
    margin: 0 auto; 
    padding-left: 15px;
    padding-right: 15px;
+   @media (max-width:1350px) {
+    max-width: 1140px;
+   }
 }
 .section-main {
   background-image: url("../img/bg-1.png");
@@ -64,10 +67,18 @@ h2 {
   &__tomato {
     right: 107px;
     bottom: 136px;
+    @media (max-width: 1700px) {
+      right: 10px;
+    }
   }
   &__avocado {
     right: -21px;
     top: 50px;
+    @media (max-width: 1700px) {
+      right: -61px;
+      top: 101px;
+      width: 129px;
+    }
   }
   &__cucumber {
     left: 682px;
@@ -75,11 +86,18 @@ h2 {
   }
   &__pepper {
     left: 31px;
-    top: 398px;
+    top: 40%;
+    @media (max-width: 1700px) {
+      left: -1px;
+      top: 50%;
+    }
   }
   &__beans {
     left: -4px;
     bottom: 172px;
+    @media (max-width: 1700px) {
+      display: none;
+    }
   }
 }
   
@@ -89,6 +107,9 @@ h2 {
   align-items: center;
   &-text {
     flex:0 0 40%;
+    @media (max-width:1350px) {
+      flex: 0 0 45%;
+    }
     &__description {
       font-size: 1.12rem;
       line-height: 1.51;
@@ -108,6 +129,9 @@ h2 {
       img {
         border-radius: 100%;
         box-shadow: 15px 48px 42px 0px rgba($grey, $alfa);
+        @media (max-width:1350px) {
+          width: 427px;
+        }
       }
     }
     &__btn {
@@ -142,6 +166,10 @@ h2 {
     &__01 {
       left: 59px;
       top: 46px;
+      @media (max-width:1350px) {
+        left: 79px;
+        top: 56px;
+      }
       &::before {
         left: 90px;
         top: 23px;
@@ -150,6 +178,9 @@ h2 {
     &__02 {
       right: -4px;
       top: 194px;
+      @media (max-width:1350px) {
+        right: -38px;
+      }
       &::before {
         left: -20px;
         top: 18px;
@@ -158,6 +189,9 @@ h2 {
     &__03 {
       right: 238px;
       bottom: -49px;
+      @media (max-width:1350px) {
+        bottom: -63px;
+      }
       &::before {
         left: 19px;
         top: -23px;
@@ -245,6 +279,10 @@ h2 {
     max-width: 58%;
     transform: translate(0,242px);
     transition: 0.3s ease;
+    @media (max-width:1350px) {
+      transform: translate(0,255px);
+      max-width: 80%;
+    }
       &__title {
         font-size: 1.875rem;
         font-family: 'Cormorant', serif;
@@ -305,6 +343,9 @@ h2 {
     font-size: 1.875rem;
     font-family: 'Cormorant', serif;
     margin-bottom: 22px;
+    @media (max-width:1350px) {
+      min-height: 68px;
+    }
   }
   &__description {
     font-size: 1.1rem;
@@ -328,6 +369,9 @@ h2 {
     padding: 1.4rem 3.2rem;
     cursor: pointer;
     border: none;
+    @media (max-width:1350px) {
+      padding: 1.4rem 2rem;
+    }
   }
 }
 .slider-count {
@@ -346,11 +390,18 @@ h2 {
     &:hover {
       opacity: 1;
     }
+    @media (max-width:1350px) {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
   }
   &__number {
     border: none;
     width: 40px;
     text-align: center;
+    @media (max-width:1350px) {
+      width: 30px;
+    }
   }
   &__minus {
     background-image: url(../img/svg/minus.svg);
@@ -402,6 +453,9 @@ h2 {
   margin-top: 65px;
   &-item {
     flex: 0 0 49%;
+    @media (max-width:1350px) {
+      flex: 0 0 50%;
+    }
   }
   &__text {
     font-size: 1.12rem;
@@ -420,6 +474,9 @@ h2 {
   font-style: italic;
   &__item {
     margin-left: 85px;
+    @media (max-width:1350px) {
+      margin-left: 55px;
+    }
     span {
       display: block;
       width: 87px;
