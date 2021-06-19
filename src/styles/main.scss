@@ -353,7 +353,7 @@ h2 {
     line-height: 1.5;
     margin-bottom: 0;
     min-height: 52px;
-    max-width: 85%;
+    max-width: 96%;
   }
   &__price {
     font-size: 1.5rem;
@@ -548,6 +548,9 @@ h2 {
     flex-basis: 230px;
     margin-right: 20px;
     margin-bottom: 20px;
+    @media (max-width:1350px) {
+      flex-basis: 200px;
+    }
   }
   &-link {
     color: rgba($grey, 0.5);
@@ -581,6 +584,9 @@ h2 {
     min-height: 515px;
     position: relative;
     padding: 1.2rem 1.87rem;
+    @media (max-width:1350px) {
+      padding: 1.2rem 1.3rem;
+    }
     box-sizing: border-box;
     box-shadow: 0 0 0 2px rgba($grey, 0);
     transition: 0.3s ease;
@@ -616,6 +622,9 @@ h2 {
     font-size: 1.875rem;
     font-family: 'Cormorant', serif;
     margin-bottom: 18px;
+    @media (max-width:1350px) {
+      min-height: 68px;
+    }
   }
   &__description {
     color: rgba($grey, 0.7);
@@ -623,6 +632,9 @@ h2 {
     margin-bottom: 0;
     min-height: 52px;
     max-width: 85%;
+    @media (max-width:1350px) {
+      min-height: 72px;
+    }
   }
   &__price {
     font-size: 1.5rem;
@@ -639,6 +651,9 @@ h2 {
     cursor: pointer;
     border: none;
     font-size: 0.87rem;
+    @media (max-width:1350px) {
+      padding: 1.2rem 1rem;
+    }
   }
 }
 .catalog-count {
@@ -654,6 +669,10 @@ h2 {
     cursor: pointer;
     opacity: 0.4;
     transition: 0.2s ease;
+    @media (max-width:1350px) {
+      width: 2.25rem;
+      height: 2.25rem;
+    }
     &:hover {
       opacity: 1;
     }
