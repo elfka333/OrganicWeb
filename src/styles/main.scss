@@ -482,6 +482,9 @@ h2 {
     @media (max-width:1440px) {
       min-height: 68px;
     }
+    @media (max-width:540px) {
+      font-size: 0.87rem;
+    }
   }
   &__description {
     font-size: 1.1rem;
@@ -490,10 +493,16 @@ h2 {
     margin-bottom: 0;
     min-height: 52px;
     max-width: 96%;
+    @media (max-width:540px) {
+      font-size: 0.75rem;
+    }
   }
   &__price {
     font-size: 1.5rem;
     margin-top: 28px;
+    @media (max-width:540px) {
+      font-size: 0.87rem;
+    }
   }
 }
 .slider-footer {
@@ -514,6 +523,9 @@ h2 {
   display: flex;
   align-items: center;
   font-size: 1.5rem;
+  @media (max-width:540px) {
+    display: none;
+  }
   &__minus, &__plus {
     display: block;
     width: 3.12rem;
@@ -725,12 +737,19 @@ h2 {
   background-position: center;
   background-repeat: no-repeat;
   padding-bottom: 103px;
+  @media (max-width:540px) {
+    text-align: center;
+    padding-bottom: 65px;
+  }
   &__text {
     font-size: 1.5rem;
     margin-top: 2.35rem;
     line-height: 1.5;
     margin-bottom: 5.35rem;
     letter-spacing: 1px;
+    @media (max-width:540px) {
+      font-size: 0.75rem;
+    }
   }
 }
 .tab {
@@ -740,6 +759,9 @@ h2 {
   list-style-type: none;
   flex-wrap: wrap;
   margin-bottom: 29px;
+  @media (max-width:540px) {
+    flex-wrap: nowrap;
+  }
   &-item {
     max-width: 230px;
     flex-basis: 230px;
@@ -747,6 +769,9 @@ h2 {
     margin-bottom: 20px;
     @media (max-width:1440px) {
       flex-basis: 200px;
+    }
+    @media (max-width:540px) {
+      flex: 0 0 150px;
     }
   }
   &-link {
@@ -759,6 +784,10 @@ h2 {
     text-align: center;
     transition: 0.2s ease;
     font-size: 1.12rem;
+    @media (max-width:540px) {
+      font-size: 0.75rem;
+      padding: 1rem 0;
+    }
     &:hover{
       color: $orange;
       border: 1px solid $orange;
@@ -784,6 +813,9 @@ h2 {
     @media (max-width:1440px) {
       padding: 1.2rem 1.3rem;
     }
+    @media (max-width:540px) {
+      min-height: 248px;
+    }
     box-sizing: border-box;
     box-shadow: 0 0 0 2px rgba($grey, 0);
     transition: 0.3s ease;
@@ -808,6 +840,9 @@ h2 {
     overflow: hidden;
     width: 100%;
     height: 229px;
+    @media (max-width:1440px) {
+      height: 80px;
+    }
     &__image {
       position: absolute;
       left: 50%;
@@ -815,6 +850,9 @@ h2 {
       transform: translate(-50%, -50%);
       object-fit: cover;
       max-height: 224px;
+      @media (max-width:540px) {
+        max-height: 65px;
+      }
     }
   }
 }
@@ -826,6 +864,11 @@ h2 {
     @media (max-width:1440px) {
       min-height: 68px;
     }
+    @media (max-width:540px) {
+      font-size: 0.87rem;
+      min-height: 20px;
+      margin-bottom: 10px;
+    }
   }
   &__description {
     color: rgba($grey, 0.7);
@@ -836,10 +879,18 @@ h2 {
     @media (max-width:1440px) {
       min-height: 72px;
     }
+    @media (max-width:540px) {
+      font-size: 0.625rem;
+      min-height: 45px;
+      margin: 0 auto;
+    }
   }
   &__price {
     font-size: 1.5rem;
     margin-top: 9px;
+    @media (max-width:1440px) {
+      font-size: 0.75rem;
+    }
   }
 }
 .catalog-footer {
@@ -857,6 +908,9 @@ h2 {
     font-size: 0.87rem;
     @media (max-width:1440px) {
       width: 100%;;
+    }
+    @media (max-width:540px) {
+      font-size: 0.625rem;
     }
   }
 }
@@ -903,6 +957,9 @@ h2 {
   margin: 20px auto;
   display: flex;
   justify-content: center;
+  @media (max-width:540px) {
+    margin: 0 auto;
+  }
   &__text {
     text-transform: uppercase;
     text-decoration: none;
@@ -917,6 +974,10 @@ h2 {
     transition: 0.3s ease;
     background-color: transparent;
     position: relative;
+    @media (max-width:540px) {
+      font-size: 0.625rem;
+      opacity: 1;
+    }
     &:hover {
       opacity: 1;
     }
@@ -933,6 +994,12 @@ h2 {
       top: calc(50% - 0.78rem);
       background-image: url(../img/refresh.png);
       background-repeat: no-repeat;
+      @media (max-width:540px) {
+        width: 1.25rem;
+        height: 1.25rem;
+        top: calc(50% - 0.625rem);
+        background-image: url(../img/svg/refresh.svg);
+      }
   }
   }
 }
