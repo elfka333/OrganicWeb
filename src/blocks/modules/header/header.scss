@@ -8,6 +8,7 @@
     padding-bottom: 46px;
     padding-left: 15px;
     padding-right: 15px;
+    box-sizing: content-box;
     @media (max-width:1440px) {
         max-width: 1140px;
     }
@@ -139,6 +140,7 @@ nav {
         text-decoration: none;
         color: $grey;
         transition: 0.3s ease;
+        padding: 0;
         &:hover {
             color: $orange;
         }

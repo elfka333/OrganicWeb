@@ -9,6 +9,13 @@
 :root {
   font-size: 16px;
 }
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    color: $grey;
+  }
+}
 body {
   font-family: 'Jost', sans-serif;
   color: $grey;
@@ -21,6 +28,10 @@ h2 {
   font-family: 'Cormorant',serif;
   font-size: 5rem;
   line-height: 1;
+  @media (max-width:540px) {
+    font-size: 1.87rem;
+  }
+  
 }
 .title span {
   font-style: italic;
@@ -37,6 +48,10 @@ h2 {
   transition: 0.2s ease;
   &:hover {
     background-color: $orangeHover;
+  }
+  @media (max-width:540px) {
+    font-size: .75rem;
+    padding: 1rem 1.5rem;
   }
 }
 .ml {
@@ -62,6 +77,11 @@ h2 {
    @media (max-width:990px) {
     max-width: 100%;
    }
+   @media (max-width:540px) {
+    max-width: 440px;
+    padding-left: 30px;
+    padding-right: 30px;
+   }
 }
 .section-main {
   background-image: url("../img/bg-1.png");
@@ -70,6 +90,9 @@ h2 {
   background-repeat: no-repeat;
   padding-bottom: 208px;
   position: relative;
+  @media (max-width: 1200px) {
+    padding-bottom: 10px;
+  }
   &__image {
     position: absolute;
   }
@@ -78,6 +101,14 @@ h2 {
     bottom: 136px;
     @media (max-width: 1700px) {
       right: 10px;
+    }
+    @media (max-width: 1200px) {
+      left: -25px;
+      top: 120px;
+      transform: rotate(45deg);
+    }
+    @media (max-width: 720px) {
+      width: 60px;
     }
   }
   &__avocado {
@@ -88,10 +119,25 @@ h2 {
       top: 101px;
       width: 129px;
     }
+    @media (max-width: 720px) {
+      width: 80px;
+      right: -40px;
+    }
   }
   &__cucumber {
     left: 682px;
     top: -2px;
+    @media (max-width: 1200px) {
+      right: -21px;
+      bottom: 303px;
+      left: unset;
+      top: unset;
+      transform: rotate(90deg);
+      @media (max-width: 720px) {
+        width: 40px;
+        right: -10px;
+      }
+    }
   }
   &__pepper {
     left: 31px;
@@ -137,13 +183,16 @@ h2 {
       }
     }
     &__image {
-      @media (max-width:1201px) {
+      @media (min-width:1201px) {
         display: none;
       }
       @media (max-width:1200px) {
         display: block;
         width: 427px;
         margin: 0 auto 65px;
+      }
+      @media (max-width:540px) {
+        width: 245px;
       }
     }
   }
@@ -153,12 +202,18 @@ h2 {
     padding: 53px;
     position: relative;
     @media (max-width:1200px) {
+      border: none;
+      padding: 0;
       display: none;
     }
     &__image {
       border: 1px solid rgba($grey, $alfa);
       border-radius: 100%;
       padding: 21px;
+      @media (max-width:1200px) {
+        border: none;
+        padding: 0;
+      }
       img {
         border-radius: 100%;
         box-shadow: 15px 48px 42px 0px rgba($grey, $alfa);
@@ -173,6 +228,9 @@ h2 {
       color: rgba($grey, 0.8);
       text-align: left;
       position: absolute;
+      @media (max-width:1200px) {
+        display: none;
+      }
       span {
         color: rgba($grey, 1);
         display: block;
@@ -238,11 +296,17 @@ h2 {
   background-position: center;
   background-repeat: no-repeat;
   padding-bottom: 160px;
+  @media (max-width:540px) {
+    text-align: center;
+  }
   &__text {
     font-size: 1.5rem;
     max-width: 690px;
     margin-top: 3.7rem;
     line-height: 1.5;
+    @media (max-width:540px) {
+      font-size: .75rem;
+    }
   }
 }
 .slider {
@@ -314,10 +378,13 @@ h2 {
     transition: 0.3s ease;
     @media (max-width:1440px) {
       transform: translate(0,255px);
-      max-width: 80%;
+      max-width: 70%;
     }
     @media (max-width:1200px) {
-      max-width: 80%;
+      max-width: 59%;
+    }
+    @media (max-width:830px) {
+      max-width: 60%;
     }
       &__title {
         font-size: 1.875rem;
@@ -326,8 +393,11 @@ h2 {
       }
       &__description {
         color: rgba($grey, 0.7);
-        margin-bottom: 42px;
+        margin-bottom: 10px;
         line-height: 1.5;
+        @media (max-width:830px) {
+          margin-bottom: 0;
+        }
       }
       &__link {
         color: $grey;
@@ -480,6 +550,7 @@ h2 {
   list-style-type: none;
   justify-content: center;
   text-indent: -9999px;
+  padding-top: 10px;
   & > li {
     width: 10px;
     height: 10px;
@@ -865,6 +936,11 @@ h2 {
     margin-left: 0.31rem;
     margin-right: 1.55rem;
     margin-top: 1.12rem;
+    opacity: 0.4;
+    &:hover {
+      opacity: 1;
+      transition: 0.3s ease;
+    }
   }
   &__mc {
     width: 53px;
@@ -1009,5 +1085,102 @@ h2 {
     font-size: 0.75rem;
     line-height: 1.5;
     max-width: 80%;
+  }
+}
+.modal-footer {
+  display: flex;
+  justify-content: center;
+  border: none;
+  padding: 1.5rem;
+}
+.modal-footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-right: 5px;
+  padding-bottom: .5rem;
+  &__vk {
+      background-image: url(../../../img/svg/vk.svg);
+      background-size: 23px;
+  }
+  &__insta {
+      background-image: url(../../../img/svg/instagram.svg);
+      background-size: 18px;
+  }
+  &__fb {
+      background-image: url(../../../img/svg/facebook.svg);
+      background-size: 18px;
+  }
+  &__link {
+      display: block;
+      width: 48px;
+      height: 48px;
+      border: 2px solid $grey;
+      transition: 0.2s ease;
+      border-radius: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      opacity: 0.8;
+      &:hover {
+          opacity: 1;
+          transition: 0.3s ease;
+      }
+  }
+  & > li {
+    padding: 0 1rem;
+  }
+}
+.modal-header {
+  border: none;
+}
+.close {
+  font-weight: 100;
+  color: $grey;
+  opacity: 0.8;
+  & > span {
+    border: 2px solid rgba($grey, 0.8);
+    border-radius: 100%;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 28px;
+    height: 28px;
+    box-sizing: content-box;
+  }
+}
+.modal {
+  padding: 0 !important;
+  margin: 0;
+}
+.modal-dialog {
+  width: 100%;
+  margin: 0 auto;
+  @media (min-width: 576px) {
+    max-width: unset;
+  }
+}
+.modal-content {
+  border: none;
+  border-radius: 0;
+}
+.nav-mobile {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  &-item {
+      padding-top: 1rem;
+  }
+  &-link {
+      text-decoration: none;
+      color: $grey;
+      transition: 0.3s ease;
+      padding: 0;
+      font-weight: 500;
+      &:hover {
+          color: $orange;
+      }
   }
 }

@@ -25,10 +25,18 @@
         list-style-type: none;
         &__item {
             margin-bottom: 1.62rem;
+            &:hover {
+                color: $orange;
+                transition: 0.2s ease;
+            }
         }
         &__link {
             text-decoration: none;
             color: $grey;
+            &:hover {
+                color: $orange;
+                transition: 0.2s ease;
+            }
         }
         &__tel {
             font-size: 1.68rem;
@@ -68,6 +76,10 @@
         background-repeat: no-repeat;
         background-position: center center;
         opacity: 0.8;
+        &:hover {
+            opacity: 1;
+            transition: 0.3s ease;
+        }
     }
 }
 .box-copyright {
