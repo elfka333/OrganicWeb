@@ -79,8 +79,6 @@ h2 {
    }
    @media (max-width:540px) {
     max-width: 440px;
-    padding-left: 30px;
-    padding-right: 30px;
    }
 }
 .section-main {
@@ -1070,6 +1068,10 @@ h2 {
     margin-right: 1.55rem;
     margin-top: 1.12rem;
     opacity: 0.4;
+    @media (max-width:540px) {
+      opacity: 0.8;
+      margin: 0 auto;
+    }
     &:hover {
       opacity: 1;
       transition: 0.3s ease;
@@ -1098,6 +1100,9 @@ h2 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  @media (max-width:540px) {
+    text-align: center;
+  }
 }
 .box-form {
   display: flex;
@@ -1105,6 +1110,10 @@ h2 {
   padding-bottom: 158px;
   @media (max-width:1200px) {
     flex-direction: column;
+  }
+  
+  @media (max-width:540px) {
+    padding-bottom: 70px;
   }
 }
 .box-form-item {
@@ -1116,9 +1125,13 @@ h2 {
   &__text {
     line-height: 1.7;
     letter-spacing: 1px;
+    @media (max-width:540px) {
+      font-size: 0.75rem;
+    }
   }
   &:last-child {
     flex: 0 0 41%;
+    margin-top: 30px;
   }
 }
 
@@ -1134,13 +1147,23 @@ h2 {
     color: $grey;
     font-size: 1.5rem;
     font-weight: 500;
+    @media (max-width:540px) {
+      font-size: 0.75rem;
+    }
   }
   &__item{
     margin: 21px 0;
     padding-left: 58px;
     position: relative;
+    @media (max-width:540px) {
+      margin: 5px;
+      padding-left: 30px;
+    }
     &:last-child {
       margin-bottom: 0;
+      @media (max-width:540px) {
+        margin-bottom: 5px;
+      }
     }
     &::before{
       content: '';
@@ -1151,17 +1174,28 @@ h2 {
       position: absolute;
       left: 0;
       top: calc(50% - 12.5px);
+      @media (max-width:540px) {
+        width: 18px;
+        height: 16px;
+        top: calc(50% - 8px);
+      }
     }
   }
   &__tel{
     &::before {
       background-image: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAZCAYAAADNAiUZAAADJUlEQVRIia3WbcieYxgH8N/m3kQza/INmeRlrBSWZLOWl5IIeQs1w0SI5INF8/JB0eZtmnwhMjze32qG8JBSiCFmNo9IaSPZZlg2HfV/ni6X67l58K+r676P8zj///M8zuM4zmvcqkv30cB4nILTsD928+/xPVbjSTyNbcNMvQblAXgUX+F+vItNGdsDP+DnPkvYGVPxTf5PwmE4H9fjLHzWFJ2BF3A5nmuR1c6X4idc20f0FkzGZdnZj1nAMzgJL+FEfFSiExOCi7Cyg2w2rsNVOB6/dvjsiK3xmx3RJmojv0Tn4BJdgLdGEZyGI/BBzmRX/NbhNzHj2+Jf875s+ayMzoISPSO7aKPO6DUsxrP4GHv2Ce/XWJsQ17zpHTlwD27vZXAIU1oOlQSf4u78fy+hvSQh3B3rMYhlWZT4n4Ajk4xNlM70Xlb2asfKJzWIxmERzsOtye7xCeehicRDuBHbs7h7G9nfxOQS/RaHdAzOwZX5XSl/FM6N6NX4Avviu9hvjt9NmXMhXu/gHeolrDd0DO6d94GYh3MwgCswIcfyQLJ2ILnxMB7PvHlZeBtTqiOdiZ06Bs/G5wnh6pDelWyv8L2Bo1Mu92UxA+lkFfr98EgH75ba6WMt4w45m71wQWrswYS0zvZ3nBzfJXgx9srsdxLWagYvJ/yLMmcE41uCFbYVcZ6ZjjI19qGEdLA1Z7BRARMarXBmeFbEPqro/JRB9cmNsW1IQ6iCX4W52Zm858Y+LX4bMrYxPOvDO6ro4VjesZNZWJeGsRmvYGHem2NfF792JJaHdwS9lkOvo7aWhfx0PIVr4lNZfUfq+Tacmsw9pjV/U1unLdqFNbllFufGqXo8KC2vbqVPYl8SvzV/R/hPRGUnhSdwZ5rAcEeaFfvSht+YRXfpI1zhvTj1Otx730wyrR1l3l/4ukSrRreE7LjUbRNv52liRp4u/oXJ7r6idS0d2zirdoaPBVvD96dvrS7R5xuNev6YJLoxJ314BO1dbG93j/8BxVe8o+60Qlpfbx+O8lkyVtRnTPG930+0bv2qt0qiuj3+K+o2qsYy/PUB/gACWsA7q2LPEQAAAABJRU5ErkJggg==");
+      @media (max-width:540px) {
+        background-size: 18px 16px;
+      }
     }
   }
   &__email {
     &::before {
       background-image: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAATCAYAAABsmQZ/AAABSklEQVRIie3WPS9EQRTG8d9uFqGi0qg0VDpCI1FtQSEKtQSRSGxDKMVnoCKyKoVGfApvHWKzXwJREM2SSQ7ZSJZd3M7T3My9zzn/zJkzMzd3tdzfhz2MIic7veIMiwXso4J5PGUI7cJ64iXoCOZwjmNs4uEPYd3YwkywbvNR0mdMoQdVLCD/S1g+8lQj72RwcoU60yU6MIYdLGEl1qFVpf7YDvA0TvGCXp9m0x7PZBiO5jrBwbu5CfWG/yTihyNfff6GJaxhF4N4jEZbRVsDf1t8r4R/MOJrjer+le5Rwnis+TWKn/zFeD8VvlLENVThG+i7bjCB2ShbNcqW1n8AazhqMlfLHXoUkHKMyzFuGqiFmdYrtf3hD+I+9Nu9+A/9h35A0z3XibuMWSl/4rymLXOBDQzFNZSVUv7EuUjQdHmnUyadOtn/OTD/Bia7QeC85BIFAAAAAElFTkSuQmCC");
       background-position: 0 5px;
+      @media (max-width:540px) {
+        background-size: 18px 12px;
+      }
     }
   }
 }
@@ -1173,16 +1207,29 @@ h2 {
     margin: 0 auto;
     max-width: 500px;
   }
+  
+  @media (max-width:540px) {
+    padding: 1.5rem 2rem;
+    
+  }
   &__h3 {
     font-family: 'Cormorant', serif;
     font-size: 1.87rem;
     margin-bottom: 31px;
+    @media (max-width:540px) {
+      font-size: 1.37rem;
+      margin-bottom: 20px;
+    }
   }
   &__lebel {
     display: block;
     font-size: 0.75rem;
     margin-bottom: 10px;
     margin-left: 5px;
+    @media (max-width:540px) {
+      font-size: 0.625rem;
+      text-align: left;
+    }
   }
   &__input {
     display: block;
@@ -1192,6 +1239,12 @@ h2 {
     border-radius: 20px;
     padding: 1.4rem 1.9rem;
     margin-bottom: 29px;
+    @media (max-width:540px) {
+      font-size: 0.75rem;
+      padding: 1rem 1.5rem;
+      margin-bottom: 21px;
+    }
+    
     &:focus {
       outline: none;
       border: 1px solid $grey;
@@ -1211,6 +1264,10 @@ h2 {
     margin-top: 11px;
     padding: 1.5rem 3.2rem;
     border: none;
+    
+    @media (max-width:540px) {
+      padding: 1rem 2rem;
+    }
   }
   &-text {
     margin: 9px 0;
@@ -1218,6 +1275,10 @@ h2 {
     font-size: 0.75rem;
     line-height: 1.5;
     max-width: 80%;
+    @media (max-width:540px) {
+      font-size: 0.625rem;
+      margin: 9px auto;
+    }
   }
 }
 .modal-footer {
