@@ -58,9 +58,9 @@
         &__link {
             text-decoration: none;
             color: $grey;
-            font-size: 0.75rem;
             @media (max-width:540px) {
                 padding: 5px;
+                font-size: 0.75rem;
             } 
             &:hover {
                 color: $orange;
