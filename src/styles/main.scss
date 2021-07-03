@@ -1408,6 +1408,8 @@ h2 {
   border: none;
   border-radius: 20px;
   width: 240px;
+  min-width: 240px;
+  top: 30px !important;
   &__title {
     font-size: 1.5rem;
     font-family: 'Cormorant';
@@ -1417,4 +1419,10 @@ h2 {
     font-size: 0.875rem;
     opacity: 0.6;
   }
+  &__img {
+    max-width: 45px;
+  }
+}
+.dropdown-menu-cart {
+  margin-left: 10px;
 }

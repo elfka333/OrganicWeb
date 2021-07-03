@@ -88,6 +88,15 @@
     width: 2.5rem;
     height: 2.5rem;
     margin-left: 80px;
+    .dropdown-menu {
+        transform: translate3d(-195px, 40px, 0px) !important;
+    }
+    .dropdown-menu.show {
+        display: flex;
+        justify-content: space-between;
+        width: 275px;
+        min-width: 275px;
+    }
     @media (max-width:1440px) {
         margin-left: 40px;
     }
@@ -104,6 +113,9 @@
         background-size: 1rem 0.87rem;
         background-repeat: no-repeat;
         background-position: center center;
+        &:focus {
+            outline: none;
+        }
         @media (max-width:990px) {
             background-color: transparent;
             border: 1px solid $grey;

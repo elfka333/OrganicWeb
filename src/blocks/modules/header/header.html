@@ -16,8 +16,19 @@
     <div class="header-item">
         <a class="header__tel" href="tel:+79453425555">+7 945 342 55 55</a>
         <button type="button" class="header__menu" data-toggle="modal" data-target="#menuModal"></button>
-        <div class="header-cart">
-            <button class="header-cart__button" type="button" ></button>
+        <div class="header-cart dropdown">
+            <button class="header-cart__button" type="button" id="dropdownCartButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+            <div class="dropdown-menu dropdown-menu-right p-4 " style="max-width: 200px;" aria-labelledby="dropdownCartButton">
+                <img class="dropdown-menu__img" src="../../../img/stock/milk.png">
+                <div class="dropdown-menu-cart">
+                    <p class="dropdown-menu-cart__title">
+                        Вы добавили в корзину
+                    </p>
+                    <p class="dropdown-menu-cart__text mb-0">
+                        Молоко топленое
+                    </p>
+                </div> 
+            </div>
             <span class="header-cart__count">0</span>
         </div>
     </div>
